@@ -1,4 +1,4 @@
-package com.ducduy.tickets.domain;
+package com.ducduy.tickets.domain.entities;
 
 import jakarta.persistence.*;
 import lombok.*;

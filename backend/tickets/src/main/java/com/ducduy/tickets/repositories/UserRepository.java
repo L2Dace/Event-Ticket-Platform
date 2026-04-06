@@ -1,6 +1,6 @@
 package com.ducduy.tickets.repositories;
 
-import com.ducduy.tickets.domain.User;
+import com.ducduy.tickets.domain.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

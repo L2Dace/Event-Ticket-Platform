@@ -1,4 +1,4 @@
-package com.ducduy.tickets.domain;
+package com.ducduy.tickets.domain.entities;
 
 public enum EventStatusEnum {
     DRAFT,      // Initial state when creating an event

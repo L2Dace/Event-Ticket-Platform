@@ -1,4 +1,4 @@
-package com.ducduy.tickets.domain;
+package com.ducduy.tickets.domain.entities;
 
 public enum TicketValidationStatusEnum {
     VALID,      // Ticket is valid for entry

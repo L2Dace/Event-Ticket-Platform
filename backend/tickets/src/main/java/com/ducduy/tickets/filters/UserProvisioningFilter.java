@@ -1,6 +1,6 @@
 package com.ducduy.tickets.filters;
 
-import com.ducduy.tickets.domain.User;
+import com.ducduy.tickets.domain.entities.User;
 import com.ducduy.tickets.repositories.UserRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

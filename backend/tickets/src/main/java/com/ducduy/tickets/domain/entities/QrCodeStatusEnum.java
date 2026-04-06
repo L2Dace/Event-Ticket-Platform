@@ -1,4 +1,4 @@
-package com.ducduy.tickets.domain;
+package com.ducduy.tickets.domain.entities;
 
 public enum QrCodeStatusEnum {
     ACTIVE,     // QR code can be used
