@@ -54,7 +54,7 @@ const OrganizersLandingPage: React.FC = () => {
             <div className="flex flex-wrap gap-4">
               <Button
                 className="cursor-pointer"
-                onClick={() => navigate("/dashboard/events")}
+                onClick={() => navigate("/dashboard/events/create")}
               >
                 Create an Event
               </Button>
