@@ -5,6 +5,7 @@ import com.ducduy.tickets.domain.entities.Event;
 import com.ducduy.tickets.domain.entities.TicketType;
 import com.ducduy.tickets.domain.entities.User;
 import com.ducduy.tickets.exceptions.UserNotFoundException;
+import com.ducduy.tickets.repositories.EventRepository;
 import com.ducduy.tickets.repositories.UserRepository;
 import com.ducduy.tickets.services.EventService;
 import lombok.RequiredArgsConstructor;
@@ -19,6 +20,7 @@ import java.util.UUID;
 public class EventServiceImpl implements EventService {
 
     private final UserRepository userRepository;
+    private final EventRepository eventRepository;
 
     @Override
     public Event createEvent(UUID organizerId, CreateEventRequest event) {
@@ -48,7 +50,6 @@ public class EventServiceImpl implements EventService {
         eventToCreate.setOrganizer(organizer);
         eventToCreate.setTicketTypes(ticketTypesToCreate);
 
-
-        return null;
+        return eventRepository.save(eventToCreate);
     }
 }
