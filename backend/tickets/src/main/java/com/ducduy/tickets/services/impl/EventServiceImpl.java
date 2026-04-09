@@ -10,12 +10,13 @@ import com.ducduy.tickets.repositories.UserRepository;
 import com.ducduy.tickets.services.EventService;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-@Setter
+@Service
 @RequiredArgsConstructor
 public class EventServiceImpl implements EventService {
 
