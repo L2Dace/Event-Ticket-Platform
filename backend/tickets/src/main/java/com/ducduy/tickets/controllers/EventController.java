@@ -37,7 +37,7 @@ public class EventController {
 
         Event createdEvent = eventService.createEvent(userId, createEventRequest);
         CreateEventResponseDto createEventResponseDto = eventMapper.toDto(createdEvent);
-        return new ResponseEntity<>(createEventResponseDto, HttpStatus.CREATED); //201
+        return new ResponseEntity<>(createEventResponseDto, HttpStatus.CREATED); //http 201
     }
 
 }
